@@ -56,18 +56,21 @@ function searchSubmit(event) {
 
 function seeForecast() {
   let forecastElement = document.querySelector("#forecast");
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
+
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `<div class="weather-forecast-day">
-              <div class="weather-forecast-date">Mon</div>
+      `
+      <div class="weather-forecast-day">
+              <span class="weather-forecast-date">${day}</span>
         <div class="weather-forecast-icon">⛅</div>
-              <div class="weather-forecast-temperatures">
-                <div class="weather-forecast-temperature"><strong>18&deg</strong></div>
-                <div class="weather-forecast-temperature">12&deg</div>
-              </div>
+              <span class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature"><strong>18&deg</strong></span>
+                <span class="weather-forecast-temperature">12&deg</span>
+              </span>
               </div>
               `;
   });
@@ -75,7 +78,6 @@ function seeForecast() {
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
-
 searchCity("Sydney");
 
 seeForecast();
