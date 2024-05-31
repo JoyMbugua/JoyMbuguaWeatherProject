@@ -30,38 +30,25 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="city" id="city"></h1>
+            <h1 class="city" id="city">Sydney</h1>
             <p>
               <span id="time">Thursday 15:20</span>,
               <span id="description">Scattered clouds</span>
               <br />
-              <span id="humidity"> Humidity : </span>
-              <span id="wind-speed"> Wind : </span>
+              <span id="humidity"> Humidity : 87% </span>
+              <span id="wind-speed"> Wind : 7.2km/h</span>
               <br />
             </p>
           </div>
           <div class="city-temperature-container">
             <div id="icon"></div>
-            <div class="current-temperature" id="current-temperature"></div>
-            <div class="temperature-unit">&deg F</div>
-          </div>
-        </div>
-        <div class="weather-forecast">
-          <div class="row">
-            <div class="col-2">
-              <div class="weather-forecast-date">Mon</div>
-              <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-                alt=""
-                width="42"
-              />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max">18&deg</span>
-                <span class="weather-forecast-temperature-min">12&deg</span>
-              </div>
+            <div class="current-temperature" id="current-temperature">
+              24&deg C
             </div>
+            <div class="temperature-unit">&deg C</div>
           </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
 
       <footer>
