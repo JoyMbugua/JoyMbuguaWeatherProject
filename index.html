@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>App Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="city" id="city"></h1>
+            <p>
+              <span id="time">Thursday 15:20</span>,
+              <span id="description">Scattered clouds</span>
+              <br />
+              <span id="humidity"> Humidity : </span>
+              <span id="wind-speed"> Wind : </span>
+              <br />
+            </p>
+          </div>
+          <div class="city-temperature-container">
+            <div id="icon"></div>
+            <div class="current-temperature" id="current-temperature"></div>
+            <div class="temperature-unit">&deg F</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Mon</div>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18&deg</span>
+                <span class="weather-forecast-temperature-min">12&deg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This Project was coded by<a
+          href="https://github.com/JoyMbugua"
+          target="_blank"
+          >Joy Mbugua</a
+        >
+        and is
+        <a href="https://github.com/JoyMbugua/JoyMbuguashecodes" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://pages.github.com/" target="_blank"
+          >hosted on GitHub Pages</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

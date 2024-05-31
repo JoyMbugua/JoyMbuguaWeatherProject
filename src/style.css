@@ -1,0 +1,79 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.weather-app {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  max-width: 700px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+}
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 15px;
+  padding: 15px 20px;
+}
+.search-form-button {
+  background-color: #2772db;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 15px 30px;
+  color: #ffffff;
+}
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+.city-temperature-container {
+  display: flex;
+}
+.temperature-icon {
+  width: 88px;
+  height: 88px;
+}
+.current-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.temperature-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+.weather-forecast {
+  margin: top 20px;
+  text-align: center;
+  color: #000;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  color: rgba(0, 0, 0, 0.6);
+}
