@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>App Weather</title>
+    <title>Vanilla Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,20 +30,20 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="city" id="city">Sydney</h1>
+            <h1 class="city" id="city"></h1>
             <p>
-              <span id="time">Thursday 15:20</span>,
-              <span id="description">Scattered clouds</span>
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              <span id="humidity"> Humidity : 87%</span>
-              <span id="wind-speed"> Wind : 7.2km/h </span>
+              <span id="humidity"></span>
+              <span id="wind-speed"> </span>
               <br />
             </p>
           </div>
           <div class="city-temperature-container">
             <div id="icon"></div>
-            <div class="current-temperature" id="current-temperature">24</div>
-            <div class="temperature-unit">&deg C</div>
+            <div class="current-temperature" id="current-temperature"></div>
+            <div class="temperature-unit"></div>
           </div>
         </div>
         <div class="weather-forecast" id="forecast"></div>
@@ -67,6 +67,6 @@
         >
       </footer>
     </div>
-    <script src="src/index.js"></script>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
