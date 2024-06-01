@@ -57,6 +57,12 @@ header {
   margin-top: 16px;
   font-size: 28px;
 }
+.humidity {
+  color: #2772db;
+}
+.wind-speed {
+  color: #2772db;
+}
 .weather-forecast {
   margin: 0 auto;
   text-align: center;
@@ -73,6 +79,13 @@ header {
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+  color: #2772db;
+}
+.weather-forecast-temperature-max {
+  color: #2772db;
+}
+.weather-forecast-temperature-min {
+  color: #2772db;
 }
 footer {
   border-top: 1px solid #f9f7fe;
