@@ -1,4 +1,3 @@
-import axios from "axios";
 function showCurrentWeather(response) {
   let currentTemperature = document.querySelector("#current-temperature");
   let temperature = response.data.temperature.current;
@@ -64,7 +63,8 @@ function formatDay(timestamp) {
 }
 
 function getForecast(city) {
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  let myApikey = "0de40f3ac6t7b9b23817fc4oa7443d4f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${myApikey}&units=metric`;
   axios(apiUrl).then(seeForecast);
 }
 
