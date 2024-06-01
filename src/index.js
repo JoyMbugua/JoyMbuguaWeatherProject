@@ -14,7 +14,7 @@ function showCurrentWeather(response) {
               class="temperature-icon"/>`;
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
-  timeElement.innerHTML = currentDate(date);
+  timeElement.innerHTML = `${currentDate(date)}, `;
   humidityElement.innerHTML = `Humidity: <span class="humidity">${response.data.temperature.humidity}%</span>`;
   windSpeedElement.innerHTML = `Wind-speed: <span class="wind-speed">${response.data.wind.speed}km/h</span>`;
   currentTemperature.innerHTML = `${Math.round(temperature)}&degC`;
