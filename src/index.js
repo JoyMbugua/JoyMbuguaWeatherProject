@@ -1,3 +1,4 @@
+import axios from "axios";
 function showCurrentWeather(response) {
   let currentTemperature = document.querySelector("#current-temperature");
   let temperature = response.data.temperature.current;
@@ -17,7 +18,7 @@ function showCurrentWeather(response) {
   timeElement.innerHTML = currentDate(date);
   humidityElement.innerHTML = `Humidity: <span class="humidity">${response.data.temperature.humidity}%</span>`;
   windSpeedElement.innerHTML = `Wind-speed: <span class="wind-speed">${response.data.wind.speed}km/h</span>`;
-  currentTemperature.innerHTML = Math.round(temperature);
+  currentTemperature.innerHTML = Math.round(temperature)`&deg C`;
 
   getForecast(response.data.city);
 }
@@ -81,18 +82,18 @@ function seeForecast(response) {
         forecastHtml +
         `
       <div class="weather-forecast-day">
-              <span class="weather-forecast-date">${formatDay(day.time)}</span>
+              <div class="weather-forecast-date">${formatDay(day.time)}</div>
 
         <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
-              <span class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"><strong>${Math.round(
+              <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature-max"><strong>${Math.round(
                   day.temperature.maximum
                 )}&deg</strong>
-                </span>
-                <span class="weather-forecast-temperature-min">${Math.round(
+                </div>
+                <div class="weather-forecast-temperature-min">${Math.round(
                   day.temperature.minimum
-                )}&deg</span>
-              </span>
+                )}&deg</div>
+              </div>
               </div>
               `;
     }
